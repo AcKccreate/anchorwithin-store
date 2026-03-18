@@ -1,58 +1,58 @@
 {
-  "created_at": "2026-03-18T15:41:21.848707",
+  "created_at": "2026-03-18T15:52:13.579181",
   "products": {
     "432hz_healing": {
       "name": "432Hz Universal Healing",
       "price": 9.99,
-      "stripe_product_id": "prod_DRY_432hz_healing",
-      "stripe_price_id": "price_DRY_432hz_healing",
-      "payment_link_id": "plink_DRY_432hz_healing",
-      "payment_link": "https://buy.stripe.com/PLACEHOLDER_432hz_healing",
+      "stripe_product_id": "prod_UAnbxMlloLscoG",
+      "stripe_price_id": "price_1TCS0YJYvIJ0ph48BBNJ9DGO",
+      "payment_link_id": "plink_1TCS0YJYvIJ0ph48fpXjqrgJ",
+      "payment_link": "https://buy.stripe.com/bJe8wQe9EayHdUH0oa67S00",
       "download_url": ""
     },
     "528hz_dna": {
       "name": "528Hz DNA Repair",
       "price": 9.99,
-      "stripe_product_id": "prod_DRY_528hz_dna",
-      "stripe_price_id": "price_DRY_528hz_dna",
-      "payment_link_id": "plink_DRY_528hz_dna",
-      "payment_link": "https://buy.stripe.com/PLACEHOLDER_528hz_dna",
+      "stripe_product_id": "prod_UAnbJXZVn718oE",
+      "stripe_price_id": "price_1TCS0ZJYvIJ0ph48ymT5fbhi",
+      "payment_link_id": "plink_1TCS0ZJYvIJ0ph48QhUCkTbJ",
+      "payment_link": "https://buy.stripe.com/4gMbJ21mS5en6sfdaW67S01",
       "download_url": ""
     },
     "741hz_detox": {
       "name": "741Hz Detox & Expression",
       "price": 9.99,
-      "stripe_product_id": "prod_DRY_741hz_detox",
-      "stripe_price_id": "price_DRY_741hz_detox",
-      "payment_link_id": "plink_DRY_741hz_detox",
-      "payment_link": "https://buy.stripe.com/PLACEHOLDER_741hz_detox",
+      "stripe_product_id": "prod_UAnbNJN3ysycQK",
+      "stripe_price_id": "price_1TCS0ZJYvIJ0ph48tfNPrQVX",
+      "payment_link_id": "plink_1TCS0aJYvIJ0ph48gWPUTGly",
+      "payment_link": "https://buy.stripe.com/bJe3cw2qWayH3g39YK67S02",
       "download_url": ""
     },
     "852hz_intuition": {
       "name": "852Hz Intuition & Awakening",
       "price": 9.99,
-      "stripe_product_id": "prod_DRY_852hz_intuition",
-      "stripe_price_id": "price_DRY_852hz_intuition",
-      "payment_link_id": "plink_DRY_852hz_intuition",
-      "payment_link": "https://buy.stripe.com/PLACEHOLDER_852hz_intuition",
+      "stripe_product_id": "prod_UAnbl6zBFsmvNI",
+      "stripe_price_id": "price_1TCS0aJYvIJ0ph48wWyM8v1e",
+      "payment_link_id": "plink_1TCS0bJYvIJ0ph48KgpoTAZB",
+      "payment_link": "https://buy.stripe.com/7sY7sMfdI8qzeYL9YK67S03",
       "download_url": ""
     },
     "963hz_crown": {
       "name": "963Hz Crown Chakra",
       "price": 9.99,
-      "stripe_product_id": "prod_DRY_963hz_crown",
-      "stripe_price_id": "price_DRY_963hz_crown",
-      "payment_link_id": "plink_DRY_963hz_crown",
-      "payment_link": "https://buy.stripe.com/PLACEHOLDER_963hz_crown",
+      "stripe_product_id": "prod_UAnblEIAy8jQWa",
+      "stripe_price_id": "price_1TCS0bJYvIJ0ph48jSQiSSI5",
+      "payment_link_id": "plink_1TCS0bJYvIJ0ph48qLG98N36",
+      "payment_link": "https://buy.stripe.com/dRmbJ26Hc7mvg2Pfj467S04",
       "download_url": ""
     },
     "sacred_bundle": {
       "name": "Sacred Bundle \u2014 All 5 Frequencies",
       "price": 29.99,
-      "stripe_product_id": "prod_DRY_sacred_bundle",
-      "stripe_price_id": "price_DRY_sacred_bundle",
-      "payment_link_id": "plink_DRY_sacred_bundle",
-      "payment_link": "https://buy.stripe.com/PLACEHOLDER_sacred_bundle",
+      "stripe_product_id": "prod_UAnbZo3AAhnJoF",
+      "stripe_price_id": "price_1TCS0cJYvIJ0ph48wNw3Y8dv",
+      "payment_link_id": "plink_1TCS0cJYvIJ0ph48JhjtUPsG",
+      "payment_link": "https://buy.stripe.com/7sYfZi1mS9uD6sffj467S05",
       "download_url": ""
     }
   }
