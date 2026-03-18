@@ -1,0 +1,59 @@
+{
+  "created_at": "2026-03-18T15:41:21.848707",
+  "products": {
+    "432hz_healing": {
+      "name": "432Hz Universal Healing",
+      "price": 9.99,
+      "stripe_product_id": "prod_DRY_432hz_healing",
+      "stripe_price_id": "price_DRY_432hz_healing",
+      "payment_link_id": "plink_DRY_432hz_healing",
+      "payment_link": "https://buy.stripe.com/PLACEHOLDER_432hz_healing",
+      "download_url": ""
+    },
+    "528hz_dna": {
+      "name": "528Hz DNA Repair",
+      "price": 9.99,
+      "stripe_product_id": "prod_DRY_528hz_dna",
+      "stripe_price_id": "price_DRY_528hz_dna",
+      "payment_link_id": "plink_DRY_528hz_dna",
+      "payment_link": "https://buy.stripe.com/PLACEHOLDER_528hz_dna",
+      "download_url": ""
+    },
+    "741hz_detox": {
+      "name": "741Hz Detox & Expression",
+      "price": 9.99,
+      "stripe_product_id": "prod_DRY_741hz_detox",
+      "stripe_price_id": "price_DRY_741hz_detox",
+      "payment_link_id": "plink_DRY_741hz_detox",
+      "payment_link": "https://buy.stripe.com/PLACEHOLDER_741hz_detox",
+      "download_url": ""
+    },
+    "852hz_intuition": {
+      "name": "852Hz Intuition & Awakening",
+      "price": 9.99,
+      "stripe_product_id": "prod_DRY_852hz_intuition",
+      "stripe_price_id": "price_DRY_852hz_intuition",
+      "payment_link_id": "plink_DRY_852hz_intuition",
+      "payment_link": "https://buy.stripe.com/PLACEHOLDER_852hz_intuition",
+      "download_url": ""
+    },
+    "963hz_crown": {
+      "name": "963Hz Crown Chakra",
+      "price": 9.99,
+      "stripe_product_id": "prod_DRY_963hz_crown",
+      "stripe_price_id": "price_DRY_963hz_crown",
+      "payment_link_id": "plink_DRY_963hz_crown",
+      "payment_link": "https://buy.stripe.com/PLACEHOLDER_963hz_crown",
+      "download_url": ""
+    },
+    "sacred_bundle": {
+      "name": "Sacred Bundle \u2014 All 5 Frequencies",
+      "price": 29.99,
+      "stripe_product_id": "prod_DRY_sacred_bundle",
+      "stripe_price_id": "price_DRY_sacred_bundle",
+      "payment_link_id": "plink_DRY_sacred_bundle",
+      "payment_link": "https://buy.stripe.com/PLACEHOLDER_sacred_bundle",
+      "download_url": ""
+    }
+  }
+}
