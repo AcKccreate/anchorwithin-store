@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-03-18T15:52:13.579181",
+  "created_at": "2026-03-18T16:10:06.565009",
   "products": {
     "432hz_healing": {
       "name": "432Hz Universal Healing",
@@ -53,6 +53,51 @@
       "stripe_price_id": "price_1TCS0cJYvIJ0ph48wNw3Y8dv",
       "payment_link_id": "plink_1TCS0cJYvIJ0ph48JhjtUPsG",
       "payment_link": "https://buy.stripe.com/7sYfZi1mS9uD6sffj467S05",
+      "download_url": ""
+    },
+    "healing_herbs": {
+      "name": "Healing Herbs Guide",
+      "price": 7.99,
+      "stripe_product_id": "prod_UAntlK4mBnAWzx",
+      "stripe_price_id": "price_1TCSHsJYvIJ0ph48fo6w3p1j",
+      "payment_link_id": "plink_1TCSHsJYvIJ0ph48r0PfYX8w",
+      "payment_link": "https://buy.stripe.com/5kQ5kE7LgdKT4k71se67S06",
+      "download_url": ""
+    },
+    "essential_oils": {
+      "name": "Essential Oils Starter Guide",
+      "price": 7.99,
+      "stripe_product_id": "prod_UAntL5bHP8jhbk",
+      "stripe_price_id": "price_1TCSHtJYvIJ0ph48rX9IOldt",
+      "payment_link_id": "plink_1TCSHtJYvIJ0ph48NRXOOcDq",
+      "payment_link": "https://buy.stripe.com/bJeeVe6Hc8qz17V3Am67S07",
+      "download_url": ""
+    },
+    "natural_sleep": {
+      "name": "Natural Sleep Remedies",
+      "price": 5.99,
+      "stripe_product_id": "prod_UAntsxC8lVZtz2",
+      "stripe_price_id": "price_1TCSHtJYvIJ0ph48LQhvGs1J",
+      "payment_link_id": "plink_1TCSHuJYvIJ0ph48VfJequ7m",
+      "payment_link": "https://buy.stripe.com/bJe00k6Hc6ireYLb2O67S08",
+      "download_url": ""
+    },
+    "plant_medicine": {
+      "name": "Plant Medicine Basics",
+      "price": 9.99,
+      "stripe_product_id": "prod_UAntPlmHxJlsCX",
+      "stripe_price_id": "price_1TCSHuJYvIJ0ph48tKsU9mZs",
+      "payment_link_id": "plink_1TCSHvJYvIJ0ph480Xgf8Qtw",
+      "payment_link": "https://buy.stripe.com/bJefZi9TocGP7wj5Iu67S09",
+      "download_url": ""
+    },
+    "pet_care": {
+      "name": "Natural Pet Care Guide",
+      "price": 7.99,
+      "stripe_product_id": "prod_UAnt1Sbhvl1IRG",
+      "stripe_price_id": "price_1TCSHvJYvIJ0ph48qzoap18S",
+      "payment_link_id": "plink_1TCSHvJYvIJ0ph48jrHeIGDi",
+      "payment_link": "https://buy.stripe.com/aFa14ofdI8qz2bZc6S67S0a",
       "download_url": ""
     }
   }
