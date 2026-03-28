@@ -1,1021 +1,919 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>AnchorWithin — Natural Wellness & Healing</title>
-<meta name="description" content="Natural wellness guides, sound healing frequencies, herbal remedies and pet care. Your sanctuary for whole-body healing.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<style>
-/* ── Reset & Base ── */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --sage:       #7a9e7e;
-  --sage-light: #a8c5a0;
-  --sage-pale:  #e8f0e5;
-  --cream:      #fdf8f0;
-  --cream-dark: #f5ede0;
-  --earth:      #8b6f47;
-  --earth-dark: #5c4a2a;
-  --gold:       #c9952a;
-  --gold-light: #e8b84b;
-  --lavender:   #b8a9c9;
-  --lav-pale:   #ede8f5;
-  --brown-text: #3d2b1a;
-  --body-text:  #4a3728;
-  --muted:      #8a7060;
-  --white:      #ffffff;
-  --r:          14px;
-  --shadow:     0 4px 24px rgba(61,43,26,0.10);
-  --shadow-lg:  0 8px 40px rgba(61,43,26,0.15);
-}
-html{scroll-behavior:smooth}
-body{
-  background:var(--cream);
-  color:var(--body-text);
-  font-family:'Lato',sans-serif;
-  font-weight:400;
-  line-height:1.6;
-  min-height:100vh;
-  overflow-x:hidden;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnchorWithin Digital Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:       #08101E;
+      --navy-mid:   #0D1A2E;
+      --navy-light: #1A2D4A;
+      --navy-card:  #111D30;
+      --gold:       #C8A84B;
+      --gold-light: #D4B56A;
+      --gold-dim:   #8A6E2A;
+      --cream:      #EDE7DA;
+      --cream-dim:  #B8B0A4;
+      --white:      #FFFFFF;
+    }
 
-/* ── Botanical Background ── */
-body::before{
-  content:'';
-  position:fixed;inset:0;z-index:0;
-  background:
-    radial-gradient(ellipse 70% 50% at 5% 10%,  rgba(122,158,126,0.08) 0%,transparent 60%),
-    radial-gradient(ellipse 50% 40% at 95% 90%, rgba(184,169,201,0.08) 0%,transparent 60%),
-    radial-gradient(ellipse 80% 30% at 50% 50%, rgba(201,149,42,0.04)  0%,transparent 60%);
-  pointer-events:none;
-}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ── Header ── */
-header{
-  position:relative;z-index:10;
-  background:var(--cream);
-  border-bottom:2px solid var(--sage-pale);
-  padding:20px 20px 16px;
-  text-align:center;
-}
-.header-inner{max-width:760px;margin:0 auto;}
-.brand-lockup{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:6px;}
-.brand-icon{font-size:26px;line-height:1;}
-.brand-name{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(22px,5.5vw,32px);
-  font-weight:700;
-  color:var(--earth-dark);
-  letter-spacing:1px;
-}
-.brand-name span{color:var(--sage);}
-.tagline{
-  font-family:'Cormorant Garamond',serif;
-  font-style:italic;
-  font-size:clamp(13px,3vw,16px);
-  color:var(--muted);
-  letter-spacing:2px;
-  margin-bottom:14px;
-}
-.trust-bar{
-  display:flex;align-items:center;justify-content:center;
-  gap:16px;flex-wrap:wrap;
-}
-.trust-item{
-  font-size:11px;color:var(--muted);letter-spacing:0.5px;
-  display:flex;align-items:center;gap:5px;
-}
-.trust-icon{font-size:13px;}
+    html { scroll-behavior: smooth; }
 
-/* ── Nav Pills ── */
-.section-nav{
-  position:sticky;top:0;z-index:20;
-  background:rgba(253,248,240,0.96);
-  backdrop-filter:blur(8px);
-  border-bottom:1px solid var(--sage-pale);
-  padding:8px 16px;
-  display:flex;gap:6px;overflow-x:auto;
-  scrollbar-width:none;
-  justify-content:center;
-}
-.section-nav::-webkit-scrollbar{display:none;}
-.nav-pill{
-  flex-shrink:0;
-  padding:6px 14px;
-  border-radius:20px;
-  border:1px solid var(--sage-light);
-  background:transparent;
-  color:var(--sage);
-  font-family:'Lato',sans-serif;
-  font-size:12px;letter-spacing:0.5px;
-  font-weight:700;text-transform:uppercase;
-  text-decoration:none;
-  transition:all 0.2s;
-  cursor:pointer;
-}
-.nav-pill:hover,.nav-pill.active{
-  background:var(--sage);
-  color:var(--white);
-  border-color:var(--sage);
-}
+    body {
+      font-family: 'Bricolage Grotesque', 'Georgia', serif;
+      background: var(--navy);
+      color: var(--cream);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
 
-/* ── Hero Banner ── */
-.hero{
-  position:relative;z-index:1;
-  background:linear-gradient(135deg,var(--sage-pale) 0%,var(--lav-pale) 50%,var(--cream-dark) 100%);
-  padding:36px 20px;text-align:center;
-  border-bottom:1px solid rgba(122,158,126,0.2);
-}
-.hero h1{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(22px,5vw,34px);
-  font-weight:700;color:var(--earth-dark);
-  line-height:1.2;margin-bottom:10px;
-}
-.hero h1 em{
-  font-style:italic;color:var(--sage);
-}
-.hero p{
-  font-size:clamp(14px,3.5vw,16px);
-  color:var(--muted);max-width:520px;margin:0 auto 18px;
-  line-height:1.65;
-}
-.hero-badges{
-  display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
-}
-.hero-badge{
-  background:var(--white);
-  border:1px solid var(--sage-light);
-  border-radius:20px;
-  padding:5px 14px;
-  font-size:11px;color:var(--sage);
-  font-weight:700;letter-spacing:0.5px;text-transform:uppercase;
-}
+    /* ── HEADER ── */
+    header {
+      background: linear-gradient(180deg, #040C16 0%, var(--navy) 100%);
+      border-bottom: 1px solid var(--gold-dim);
+      padding: 0 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+    }
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--gold);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    .logo-text {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.02em;
+    }
+    .logo-text span { color: var(--gold); }
+    .header-tagline {
+      font-size: 0.8rem;
+      color: var(--cream-dim);
+    }
 
-/* ── Section Wrapper ── */
-.section{
-  position:relative;z-index:1;
-  max-width:780px;margin:0 auto;
-  padding:32px 16px 8px;
-}
-.section-header{
-  text-align:center;margin-bottom:22px;
-  padding-bottom:16px;
-  border-bottom:1px solid var(--sage-pale);
-}
-.section-eyebrow{
-  font-family:'Lato',sans-serif;
-  font-size:10px;font-weight:700;
-  letter-spacing:3px;text-transform:uppercase;
-  color:var(--sage);margin-bottom:6px;
-}
-.section-title{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(20px,4.5vw,26px);
-  font-weight:700;color:var(--earth-dark);
-  margin-bottom:8px;
-}
-.section-desc{
-  font-size:14px;color:var(--muted);
-  max-width:480px;margin:0 auto;
-  line-height:1.6;font-style:italic;
-}
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #040C16 0%, var(--navy-mid) 60%, #0A1F36 100%);
+      padding: 5rem 1.5rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(ellipse, rgba(200,168,75,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(200,168,75,0.15);
+      border: 1px solid var(--gold-dim);
+      color: var(--gold-light);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--cream-dim);
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+      font-weight: 400;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+    .hero-stat {
+      text-align: center;
+    }
+    .hero-stat-num {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+    .hero-stat-label {
+      font-size: 0.8rem;
+      color: var(--cream-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
 
-/* ── Product Grid ── */
-.product-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-}
-@media(min-width:560px){
-  .product-grid{grid-template-columns:repeat(3,1fr);}
-}
+    /* ── PRODUCTS GRID ── */
+    .products-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+    }
+    .section-sub {
+      text-align: center;
+      color: var(--cream-dim);
+      margin-bottom: 3rem;
+      font-size: 1rem;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
 
-/* ── Product Card ── */
-.card{
-  background:var(--white);
-  border:1px solid rgba(122,158,126,0.25);
-  border-radius:var(--r);
-  padding:18px 14px 16px;
-  display:flex;flex-direction:column;align-items:center;
-  text-align:center;
-  box-shadow:var(--shadow);
-  transition:transform 0.25s,box-shadow 0.25s,border-color 0.25s;
-}
-.card:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow-lg);
-  border-color:var(--sage-light);
-}
-.card-icon{
-  font-size:32px;margin-bottom:10px;
-  display:flex;align-items:center;justify-content:center;
-  width:58px;height:58px;
-  background:var(--sage-pale);
-  border-radius:50%;
-}
-.card-title{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(13px,3vw,15px);
-  font-weight:600;color:var(--earth-dark);
-  margin-bottom:5px;line-height:1.25;
-}
-.card-subtitle{
-  font-size:10px;color:var(--sage);
-  letter-spacing:1px;text-transform:uppercase;
-  font-weight:700;margin-bottom:7px;
-}
-.card-desc{
-  font-size:11px;color:var(--muted);
-  line-height:1.5;margin-bottom:12px;
-  flex-grow:1;
-}
-.card-price{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(16px,4vw,20px);
-  font-weight:700;color:var(--earth);
-  margin-bottom:10px;
-}
-.buy-btn{
-  display:block;width:100%;padding:9px 0;
-  background:var(--sage);color:var(--white);
-  border:none;border-radius:8px;
-  font-family:'Lato',sans-serif;
-  font-size:10px;font-weight:700;
-  letter-spacing:1.5px;text-transform:uppercase;
-  text-decoration:none;
-  transition:background 0.2s,transform 0.15s;
-  cursor:pointer;
-}
-.buy-btn:hover{background:var(--earth);transform:translateY(-1px);}
-.buy-btn.disabled{
-  opacity:0.4;pointer-events:none;
-  background:var(--muted);
-}
-.card-format{
-  font-size:9px;color:var(--muted);
-  margin-top:6px;letter-spacing:0.5px;
-}
+    /* ── PRODUCT CARD ── */
+    .product-card {
+      background: var(--navy-card);
+      border: 1px solid rgba(200,168,75,0.2);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold-dim);
+      box-shadow: 0 12px 40px rgba(200,168,75,0.12);
+    }
+    .card-header {
+      padding: 1.5rem 1.5rem 1rem;
+      border-bottom: 1px solid rgba(200,168,75,0.1);
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    .card-icon.blue   { background: linear-gradient(135deg, #1a3a6e, #0d1f4a); }
+    .card-icon.green  { background: linear-gradient(135deg, #1a4a2e, #0d2a1a); }
+    .card-icon.orange { background: linear-gradient(135deg, #4a2a1a, #2a150a); }
+    .card-icon.purple { background: linear-gradient(135deg, #2a1a4a, #160d2a); }
+    .card-icon.teal   { background: linear-gradient(135deg, #1a3a40, #0d1f22); }
+    .card-title-wrap {}
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.3;
+      margin-bottom: 0.2rem;
+    }
+    .card-category {
+      font-size: 0.72rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
 
-/* ── Bundle Card ── */
-.bundle-wrap{
-  position:relative;z-index:1;
-  max-width:780px;margin:0 auto;
-  padding:0 16px 28px;
-}
-.bundle-card{
-  background:linear-gradient(135deg,#f5ede0 0%,#e8f0e5 100%);
-  border:2px solid var(--gold-light);
-  border-radius:var(--r);
-  padding:24px 20px;
-  box-shadow:var(--shadow-lg);
-  display:flex;flex-wrap:wrap;gap:18px;
-  align-items:center;justify-content:center;
-  text-align:center;
-}
-.bundle-badge-pill{
-  background:var(--gold);color:var(--white);
-  font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
-  padding:3px 14px;border-radius:20px;
-  display:inline-block;margin-bottom:7px;
-}
-.bundle-title{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(16px,4.5vw,21px);
-  font-weight:700;color:var(--earth-dark);
-  margin-bottom:4px;
-}
-.bundle-desc{font-size:13px;color:var(--muted);margin-bottom:12px;line-height:1.5;}
-.bundle-pricing{
-  display:flex;align-items:center;gap:12px;
-  justify-content:center;margin-bottom:14px;flex-wrap:wrap;
-}
-.bundle-price{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(22px,5vw,28px);
-  font-weight:700;color:var(--earth);
-}
-.bundle-save{
-  background:rgba(201,149,42,0.12);
-  border:1px solid rgba(201,149,42,0.35);
-  color:var(--gold);font-size:11px;
-  padding:3px 12px;border-radius:20px;
-  font-weight:700;
-}
-.bundle-orig{
-  font-size:12px;color:var(--muted);
-  text-decoration:line-through;
-}
-.bundle-buy{
-  display:inline-block;padding:12px 34px;
-  background:var(--earth);color:var(--white);
-  border:none;border-radius:10px;
-  font-family:'Lato',sans-serif;
-  font-size:11px;font-weight:700;
-  letter-spacing:2px;text-transform:uppercase;
-  text-decoration:none;
-  transition:background 0.2s,transform 0.15s;
-}
-.bundle-buy:hover{background:var(--earth-dark);transform:translateY(-2px);}
-.bundle-buy.disabled{opacity:0.4;pointer-events:none;}
+    .card-body {
+      padding: 1.2rem 1.5rem;
+      flex: 1;
+    }
+    .card-desc {
+      font-size: 0.88rem;
+      color: var(--cream-dim);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .card-preview-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold-dim);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .card-preview-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .card-preview-list li {
+      background: rgba(200,168,75,0.08);
+      border: 1px solid rgba(200,168,75,0.15);
+      color: var(--cream-dim);
+      font-size: 0.72rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 100px;
+    }
 
-/* ── Divider ── */
-.botanical-divider{
-  display:flex;align-items:center;gap:10px;
-  max-width:780px;margin:0 auto;
-  padding:8px 20px;
-}
-.botanical-divider::before,.botanical-divider::after{
-  content:'';flex:1;
-  height:1px;background:linear-gradient(90deg,transparent,var(--sage-light),transparent);
-}
-.botanical-divider span{font-size:18px;opacity:0.6;}
+    .card-footer {
+      padding: 1.2rem 1.5rem 1.5rem;
+      border-top: 1px solid rgba(200,168,75,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .price-block {}
+    .price-label {
+      font-size: 0.7rem;
+      color: var(--cream-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .price-amount {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .price-amount .cents {
+      font-size: 1rem;
+    }
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--gold), #A88030);
+      color: var(--navy);
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 0.65rem 1.3rem;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.15s, transform 0.15s;
+      white-space: nowrap;
+    }
+    .btn-download:hover {
+      opacity: 0.92;
+      transform: scale(1.02);
+    }
+    .btn-download svg {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+    }
 
-/* ── PawCheck Banner ── */
-.pawcheck-banner{
-  position:relative;z-index:1;
-  max-width:780px;margin:0 auto;
-  padding:0 16px 28px;
-}
-.pawcheck-inner{
-  background:linear-gradient(135deg,#fdf4e8 0%,#e8f5e9 100%);
-  border:1px solid rgba(122,158,126,0.3);
-  border-radius:var(--r);
-  padding:26px 22px;
-  display:flex;flex-wrap:wrap;gap:18px;
-  align-items:center;
-  box-shadow:var(--shadow);
-}
-.pawcheck-pets{font-size:52px;flex-shrink:0;line-height:1;}
-.pawcheck-text{flex:1;min-width:200px;}
-.pawcheck-text h3{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(17px,4vw,22px);
-  font-weight:700;color:var(--earth-dark);
-  margin-bottom:6px;
-}
-.pawcheck-text p{
-  font-size:13px;color:var(--muted);
-  line-height:1.55;margin-bottom:14px;
-}
-.pawcheck-btn{
-  display:inline-block;padding:11px 26px;
-  background:var(--sage);color:var(--white);
-  border-radius:10px;text-decoration:none;
-  font-family:'Lato',sans-serif;
-  font-size:11px;font-weight:700;
-  letter-spacing:1.5px;text-transform:uppercase;
-  transition:background 0.2s,transform 0.15s;
-}
-.pawcheck-btn:hover{background:var(--earth);transform:translateY(-1px);}
-.free-badge{
-  display:inline-block;
-  background:var(--sage-pale);color:var(--sage);
-  font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
-  padding:2px 10px;border-radius:10px;margin-bottom:8px;
-}
-.pawcheck-features{
-  display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;
-}
-.pawcheck-feature{
-  background:rgba(255,255,255,0.7);
-  border:1px solid rgba(122,158,126,0.2);
-  border-radius:20px;padding:3px 10px;
-  font-size:10px;color:var(--muted);
-}
+    /* ── BUNDLE SECTION ── */
+    .bundle-section {
+      background: linear-gradient(135deg, #0A1C10 0%, #0D1A2E 100%);
+      border-top: 1px solid rgba(200,168,75,0.2);
+      border-bottom: 1px solid rgba(200,168,75,0.2);
+      padding: 4rem 1.5rem;
+    }
+    .bundle-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .bundle-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1.2rem;
+    }
+    .bundle-title {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 0.8rem;
+    }
+    .bundle-title em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    .bundle-desc {
+      color: var(--cream-dim);
+      font-size: 1rem;
+      max-width: 560px;
+      margin: 0 auto 2rem;
+    }
+    .bundle-includes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .bundle-includes .item {
+      background: rgba(200,168,75,0.1);
+      border: 1px solid rgba(200,168,75,0.25);
+      color: var(--cream);
+      font-size: 0.82rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .bundle-includes .item::before {
+      content: '✓';
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .bundle-pricing {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .bundle-price-old {
+      font-size: 1.3rem;
+      color: var(--cream-dim);
+      text-decoration: line-through;
+    }
+    .bundle-price-new {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .bundle-savings {
+      background: rgba(76, 175, 80, 0.15);
+      border: 1px solid rgba(76, 175, 80, 0.3);
+      color: #81C784;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.3rem 0.8rem;
+      border-radius: 100px;
+    }
+    .btn-bundle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: linear-gradient(135deg, var(--gold), #A88030);
+      color: var(--navy);
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 0.9rem 2.2rem;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.15s, transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 20px rgba(200,168,75,0.3);
+    }
+    .btn-bundle:hover {
+      opacity: 0.93;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(200,168,75,0.4);
+    }
 
-/* ── YouTube Section ── */
-.youtube-section{
-  position:relative;z-index:1;
-  max-width:780px;margin:0 auto;
-  padding:0 16px 28px;
-}
-.yt-header{
-  display:flex;align-items:center;gap:12px;
-  margin-bottom:16px;flex-wrap:wrap;
-}
-.yt-logo{
-  background:#ff0000;color:white;
-  font-size:10px;font-weight:700;
-  padding:4px 10px;border-radius:4px;
-  letter-spacing:1px;
-  flex-shrink:0;
-}
-.yt-header h3{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(17px,4vw,21px);
-  font-weight:700;color:var(--earth-dark);
-}
-.yt-header p{font-size:12px;color:var(--muted);width:100%;}
-.yt-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;margin-bottom:14px;
-}
-@media(min-width:500px){.yt-grid{grid-template-columns:repeat(3,1fr);}}
-.yt-card{
-  background:var(--white);
-  border:1px solid rgba(122,158,126,0.2);
-  border-radius:10px;overflow:hidden;
-  box-shadow:var(--shadow);
-  text-decoration:none;
-  transition:transform 0.2s,box-shadow 0.2s;
-  display:block;
-}
-.yt-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);}
-.yt-thumb{
-  width:100%;aspect-ratio:16/9;
-  object-fit:cover;background:var(--sage-pale);
-  display:flex;align-items:center;justify-content:center;
-  font-size:28px;
-}
-.yt-thumb img{width:100%;height:100%;object-fit:cover;}
-.yt-card-body{padding:8px 10px 10px;}
-.yt-card-title{
-  font-size:11px;font-weight:700;
-  color:var(--earth-dark);line-height:1.35;
-  margin-bottom:3px;
-}
-.yt-card-views{font-size:9px;color:var(--muted);}
-.yt-subscribe{
-  display:inline-flex;align-items:center;gap:6px;
-  background:#ff0000;color:white;
-  padding:10px 22px;border-radius:8px;
-  font-family:'Lato',sans-serif;
-  font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
-  text-decoration:none;
-  transition:background 0.2s,transform 0.15s;
-}
-.yt-subscribe:hover{background:#cc0000;transform:translateY(-1px);}
-.yt-loading{
-  text-align:center;padding:20px;color:var(--muted);
-  font-style:italic;font-size:13px;
-}
+    /* ── UNLOCK NOTICE ── */
+    #unlock-notice {
+      display: none;
+      background: linear-gradient(135deg, #0A2210, #0D1A2E);
+      border: 1px solid rgba(76,175,80,0.4);
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 700px;
+      text-align: center;
+    }
+    #unlock-notice.visible { display: block; }
+    .unlock-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #81C784;
+      margin-bottom: 0.5rem;
+    }
+    .unlock-sub {
+      color: var(--cream-dim);
+      font-size: 0.9rem;
+      margin-bottom: 1.2rem;
+    }
+    .download-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+    }
+    .dl-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(200,168,75,0.1);
+      border: 1px solid rgba(200,168,75,0.3);
+      color: var(--gold-light);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.4rem 0.9rem;
+      border-radius: 8px;
+      transition: background 0.15s;
+    }
+    .dl-link:hover { background: rgba(200,168,75,0.2); }
 
-/* ── Signals Section ── */
-.signals-section{
-  position:relative;z-index:1;
-  max-width:780px;margin:0 auto;
-  padding:0 16px 28px;
-}
-.signals-card{
-  background:linear-gradient(135deg,#f5ede0 0%,var(--lav-pale) 100%);
-  border:1px solid var(--lavender);
-  border-radius:var(--r);padding:24px 20px;
-  text-align:center;box-shadow:var(--shadow);
-}
-.signals-eyebrow{
-  font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
-  color:var(--lavender);margin-bottom:6px;
-}
-.signals-title{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(17px,4vw,21px);
-  font-weight:700;color:var(--earth-dark);margin-bottom:6px;
-}
-.signals-desc{
-  font-size:13px;color:var(--muted);
-  margin-bottom:14px;line-height:1.55;
-  max-width:460px;margin-left:auto;margin-right:auto;
-}
-.signals-price{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(20px,5vw,26px);
-  font-weight:700;color:var(--earth);
-  margin-bottom:14px;
-}
-.signals-price span{font-size:14px;color:var(--muted);}
-.signals-btn{
-  display:inline-block;padding:12px 30px;
-  background:var(--lavender);color:var(--white);
-  border-radius:10px;text-decoration:none;
-  font-family:'Lato',sans-serif;
-  font-size:11px;font-weight:700;
-  letter-spacing:2px;text-transform:uppercase;
-  transition:background 0.2s,transform 0.15s;
-}
-.signals-btn:hover{background:#9a88b8;transform:translateY(-1px);}
-.signals-disclaimer{
-  font-size:10px;color:var(--muted);
-  margin-top:10px;opacity:0.7;
-}
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--cream-dim);
+      font-size: 0.85rem;
+    }
+    .trust-item svg {
+      width: 18px;
+      height: 18px;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
 
-/* ── What You Get ── */
-.included-section{
-  position:relative;z-index:1;
-  max-width:780px;margin:0 auto;
-  padding:0 16px 24px;
-}
-.included-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:8px;
-}
-.included-item{
-  display:flex;align-items:flex-start;gap:8px;
-  font-size:12px;color:var(--muted);line-height:1.4;
-  background:var(--white);
-  border:1px solid var(--sage-pale);
-  border-radius:8px;padding:10px 10px;
-  box-shadow:0 1px 4px rgba(61,43,26,0.05);
-}
-.included-icon{font-size:15px;flex-shrink:0;margin-top:1px;}
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid rgba(200,168,75,0.1);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    .footer-logo {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+    .footer-logo span { color: var(--gold); }
+    .footer-tagline {
+      font-size: 0.8rem;
+      color: var(--cream-dim);
+    }
+    .footer-copy {
+      margin-top: 1.5rem;
+      font-size: 0.75rem;
+      color: rgba(237,231,218,0.4);
+    }
+    .footer-stripe {
+      margin-top: 0.8rem;
+      font-size: 0.75rem;
+      color: rgba(237,231,218,0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+    }
 
-/* ── Footer ── */
-footer{
-  position:relative;z-index:1;
-  background:var(--earth-dark);
-  color:rgba(255,255,255,0.7);
-  padding:32px 20px 24px;
-  margin-top:20px;
-  text-align:center;
-}
-.footer-brand{
-  font-family:'Playfair Display',serif;
-  font-size:18px;font-weight:700;
-  color:var(--cream);margin-bottom:4px;
-}
-.footer-tagline{
-  font-size:12px;font-style:italic;
-  color:rgba(255,255,255,0.5);
-  margin-bottom:16px;
-}
-.footer-links{
-  display:flex;flex-wrap:wrap;gap:16px;
-  justify-content:center;margin-bottom:14px;
-}
-.footer-links a{
-  color:var(--sage-light);font-size:12px;
-  text-decoration:none;
-  transition:color 0.2s;
-}
-.footer-links a:hover{color:var(--gold-light);}
-.footer-contact{font-size:11px;color:rgba(255,255,255,0.4);margin-bottom:8px;}
-.footer-copy{font-size:10px;color:rgba(255,255,255,0.25);}
-.stripe-trust{
-  display:inline-flex;align-items:center;gap:6px;
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:6px;padding:6px 14px;
-  font-size:11px;color:rgba(255,255,255,0.4);
-  margin-bottom:14px;
-}
-
-/* ── Status Banner ── */
-#status-banner{
-  display:none;
-  position:fixed;bottom:0;left:0;right:0;z-index:100;
-  background:rgba(122,158,126,0.12);
-  border-top:1px solid rgba(122,158,126,0.3);
-  color:var(--muted);font-size:12px;
-  text-align:center;padding:8px;
-}
-
-/* ── Mobile tweaks ── */
-@media(max-width:400px){
-  .product-grid{grid-template-columns:1fr 1fr;gap:10px;}
-  .bundle-card{padding:18px 14px;}
-  .pawcheck-inner{flex-direction:column;text-align:center;}
-}
-</style>
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .hero { padding: 3.5rem 1rem 3rem; }
+      .products-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 1.5rem; }
+      .card-footer { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+      .btn-download { width: 100%; justify-content: center; }
+      .bundle-pricing { flex-direction: column; gap: 0.5rem; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- ── Header ── -->
+<!-- HEADER -->
 <header>
   <div class="header-inner">
-    <div class="brand-lockup">
-      <span class="brand-icon">⚓</span>
-      <div class="brand-name">Anchor<span>Within</span></div>
-    </div>
-    <div class="tagline">Natural Healing · Ancient Wisdom · Modern Life</div>
-    <div class="trust-bar">
-      <span class="trust-item"><span class="trust-icon">🔒</span> Secure Checkout</span>
-      <span class="trust-item"><span class="trust-icon">⚡</span> Instant Download</span>
-      <span class="trust-item"><span class="trust-icon">🌿</span> Natural Wellness</span>
-      <span class="trust-item"><span class="trust-icon">💛</span> 30-Day Guarantee</span>
-    </div>
+    <a href="#" class="logo">
+      <div class="logo-icon">⚓</div>
+      <span class="logo-text">Anchor<span>Within</span></span>
+    </a>
+    <span class="header-tagline">Digital Library</span>
   </div>
 </header>
 
-<!-- ── Navigation ── -->
-<nav class="section-nav" role="navigation" aria-label="Store sections">
-  <a class="nav-pill active" href="#sound-healing">🎵 Sound Healing</a>
-  <a class="nav-pill" href="#herbal-wellness">🌿 Herbal Guides</a>
-  <a class="nav-pill" href="#pet-wellness">🐾 Pet Wellness</a>
-  <a class="nav-pill" href="#free-content">▶ Free Videos</a>
-  <a class="nav-pill" href="#signals">📈 Signals</a>
-</nav>
+<!-- UNLOCK NOTICE (shown after purchase redirect) -->
+<div id="unlock-notice">
+  <div class="unlock-title">🎉 Purchase Complete — Thank You!</div>
+  <div class="unlock-sub">Your download link(s) are ready below. Save them to your device.</div>
+  <div class="download-links" id="download-links-container">
+    <!-- populated by JS -->
+  </div>
+</div>
 
-<!-- ── Hero ── -->
+<!-- HERO -->
 <section class="hero">
-  <h1>Your Healing <em>Sanctuary</em></h1>
-  <p>Premium wellness guides, therapeutic sound frequencies, and natural healing resources — crafted with ancient wisdom and modern science.</p>
-  <div class="hero-badges">
-    <span class="hero-badge">🌱 All Natural</span>
-    <span class="hero-badge">📱 Instant Access</span>
-    <span class="hero-badge">✦ Expert Researched</span>
-    <span class="hero-badge">🐾 Pet Friendly</span>
+  <div class="hero-badge">AnchorWithin Digital Library</div>
+  <h1>Practical guides that<br /><em>actually save time</em></h1>
+  <p class="hero-sub">
+    Professional PDF resources on AI productivity, taxes, career growth,
+    side income, and holistic wellness. Built for doers.
+  </p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-num">5</span>
+      <span class="hero-stat-label">Guides</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">$2.99</span>
+      <span class="hero-stat-label">Each</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">Instant</span>
+      <span class="hero-stat-label">Download</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">PDF</span>
+      <span class="hero-stat-label">Format</span>
+    </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════ -->
-<!-- SECTION A — SOUND HEALING                  -->
-<!-- ══════════════════════════════════════════ -->
-<section class="section" id="sound-healing">
-  <div class="section-header">
-    <div class="section-eyebrow">🎵 Therapeutic Frequencies</div>
-    <h2 class="section-title">Sound Healing Collection</h2>
-    <p class="section-desc">Ancient solfeggio frequencies, precision-tuned for deep relaxation, cellular renewal, and spiritual alignment. 60 minutes each.</p>
-  </div>
-  <div class="product-grid">
+<!-- PRODUCTS -->
+<section class="products-section">
+  <h2 class="section-title">Browse the Library</h2>
+  <p class="section-sub">Each guide is immediately actionable — no filler, no fluff.</p>
 
-    <!-- 432Hz -->
-    <div class="card" data-product="432hz_healing">
-      <div class="card-icon">🌊</div>
-      <div class="card-subtitle">432 Hz</div>
-      <div class="card-title">Universal Healing</div>
-      <div class="card-desc">Return to nature's own frequency. Melts away stress, quiets an anxious mind, and gently guides your body back to its natural rhythm.</div>
-      <div class="card-price">$9.99</div>
-      <a class="buy-btn disabled" href="#" target="_blank" rel="noopener">Add to Cart</a>
-      <div class="card-format">60 min · MP3 · Instant Download</div>
-    </div>
+  <div class="products-grid">
 
-    <!-- 528Hz -->
-    <div class="card" data-product="528hz_dna">
-      <div class="card-icon">🌿</div>
-      <div class="card-subtitle">528 Hz</div>
-      <div class="card-title">DNA Repair & Love</div>
-      <div class="card-desc">The Love Frequency. Promotes cellular renewal, emotional release, and a deep sense of inner peace that carries through your day.</div>
-      <div class="card-price">$9.99</div>
-      <a class="buy-btn disabled" href="#" target="_blank" rel="noopener">Add to Cart</a>
-      <div class="card-format">60 min · MP3 · Instant Download</div>
-    </div>
-
-    <!-- 741Hz -->
-    <div class="card" data-product="741hz_detox">
-      <div class="card-icon">✨</div>
-      <div class="card-subtitle">741 Hz</div>
-      <div class="card-title">Cleanse & Create</div>
-      <div class="card-desc">Release what no longer serves you. Clears energetic toxins, unlocks creative flow, and restores authentic self-expression.</div>
-      <div class="card-price">$9.99</div>
-      <a class="buy-btn disabled" href="#" target="_blank" rel="noopener">Add to Cart</a>
-      <div class="card-format">60 min · MP3 · Instant Download</div>
-    </div>
-
-    <!-- 852Hz -->
-    <div class="card" data-product="852hz_intuition">
-      <div class="card-icon">🔮</div>
-      <div class="card-subtitle">852 Hz</div>
-      <div class="card-title">Intuition & Clarity</div>
-      <div class="card-desc">Awaken your inner knowing. Sharpens intuition, deepens meditation, and opens a clear channel to higher guidance.</div>
-      <div class="card-price">$9.99</div>
-      <a class="buy-btn disabled" href="#" target="_blank" rel="noopener">Add to Cart</a>
-      <div class="card-format">60 min · MP3 · Instant Download</div>
-    </div>
-
-    <!-- 963Hz -->
-    <div class="card" data-product="963hz_crown">
-      <div class="card-icon">☀️</div>
-      <div class="card-subtitle">963 Hz</div>
-      <div class="card-title">Divine Connection</div>
-      <div class="card-desc">The frequency of the gods. Activates the crown chakra, awakens pineal awareness, and opens the door to transcendent states.</div>
-      <div class="card-price">$9.99</div>
-      <a class="buy-btn disabled" href="#" target="_blank" rel="noopener">Add to Cart</a>
-      <div class="card-format">60 min · MP3 · Instant Download</div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ── Sound Healing Bundle ── -->
-<div class="bundle-wrap">
-  <div class="card bundle-card" data-product="sacred_bundle">
-    <div class="bundle-info" style="text-align:center">
-      <div class="bundle-badge-pill">Best Value — Save $19.96</div>
-      <div class="bundle-title">Sacred Bundle — All 5 Frequencies</div>
-      <div class="bundle-desc">The complete solfeggio healing journey. All five frequencies in one transformative collection — 5 hours of pure tonal medicine for body, mind, and spirit.</div>
-      <div class="bundle-pricing">
-        <span class="bundle-price">$29.99</span>
-        <span class="bundle-save">Save 40%</span>
-        <span class="bundle-orig">$49.95</span>
+    <!-- Card 1: AI Prompt Pack -->
+    <div class="product-card">
+      <div class="card-header">
+        <div class="card-icon blue">🤖</div>
+        <div class="card-title-wrap">
+          <div class="card-category">AI Productivity</div>
+          <div class="card-title">50 AI Prompts That Save Hours</div>
+        </div>
       </div>
-      <a class="bundle-buy disabled" href="#" target="_blank" rel="noopener">Get the Complete Bundle</a>
-    </div>
-  </div>
-</div>
-
-<!-- ── What's Included ── -->
-<div class="included-section">
-  <div class="included-grid">
-    <div class="included-item"><span class="included-icon">🎵</span><span>60-min precision-tuned MP3 per track</span></div>
-    <div class="included-item"><span class="included-icon">⚡</span><span>Instant download — access in seconds</span></div>
-    <div class="included-item"><span class="included-icon">♾️</span><span>Unlimited personal use, forever</span></div>
-    <div class="included-item"><span class="included-icon">📱</span><span>Works on any device or music app</span></div>
-    <div class="included-item"><span class="included-icon">🔬</span><span>Precision-tuned to exact Hz frequency</span></div>
-    <div class="included-item"><span class="included-icon">🛡️</span><span>30-day satisfaction guarantee</span></div>
-  </div>
-</div>
-
-<div class="botanical-divider"><span>🌿</span></div>
-
-<!-- ══════════════════════════════════════════ -->
-<!-- SECTION B — HERBAL & NATURAL WELLNESS      -->
-<!-- ══════════════════════════════════════════ -->
-<section class="section" id="herbal-wellness">
-  <div class="section-header">
-    <div class="section-eyebrow">🌿 Digital Guides</div>
-    <h2 class="section-title">Herbal & Natural Wellness</h2>
-    <p class="section-desc">Research-backed guides written by wellness practitioners. Practical, safe, and beautifully illustrated digital downloads.</p>
-  </div>
-  <div class="product-grid">
-
-    <!-- Healing Herbs -->
-    <div class="card" data-product="healing_herbs">
-      <div class="card-icon">🌱</div>
-      <div class="card-subtitle">PDF Guide · 42 Pages</div>
-      <div class="card-title">Healing Herbs Guide</div>
-      <div class="card-desc">10 powerful medicinal herbs — how to use them safely, where to find them, and how they can support your wellbeing naturally.</div>
-      <div class="card-price">$7.99</div>
-      <a class="buy-btn disabled" href="#" target="_blank" rel="noopener">Download Guide</a>
-      <div class="card-format">PDF · Instant Download</div>
-    </div>
-
-    <!-- Essential Oils -->
-    <div class="card" data-product="essential_oils">
-      <div class="card-icon">🫙</div>
-      <div class="card-subtitle">PDF Guide · 38 Pages</div>
-      <div class="card-title">Essential Oils Starter</div>
-      <div class="card-desc">From dilution ratios to the top 10 starter oils — everything beginners need to use aromatherapy safely and effectively.</div>
-      <div class="card-price">$7.99</div>
-      <a class="buy-btn disabled" href="#" target="_blank" rel="noopener">Download Guide</a>
-      <div class="card-format">PDF · Instant Download</div>
-    </div>
-
-    <!-- Natural Sleep -->
-    <div class="card" data-product="natural_sleep">
-      <div class="card-icon">🌙</div>
-      <div class="card-subtitle">PDF Guide · 28 Pages</div>
-      <div class="card-title">Natural Sleep Remedies</div>
-      <div class="card-desc">Herbs, frequencies, sleep rituals, and environment tips for genuinely restorative sleep — without pharmaceuticals.</div>
-      <div class="card-price">$5.99</div>
-      <a class="buy-btn disabled" href="#" target="_blank" rel="noopener">Download Guide</a>
-      <div class="card-format">PDF · Instant Download</div>
-    </div>
-
-    <!-- Plant Medicine -->
-    <div class="card" data-product="plant_medicine">
-      <div class="card-icon">🍃</div>
-      <div class="card-subtitle">PDF Guide · 48 Pages</div>
-      <div class="card-title">Plant Medicine Basics</div>
-      <div class="card-desc">A safe, beginner-friendly introduction to plant medicine — teas, tinctures, infusions, and building your home apothecary.</div>
-      <div class="card-price">$9.99</div>
-      <a class="buy-btn disabled" href="#" target="_blank" rel="noopener">Download Guide</a>
-      <div class="card-format">PDF · Instant Download</div>
-    </div>
-
-  </div>
-</section>
-
-<div class="botanical-divider"><span>🌸</span></div>
-
-<!-- ══════════════════════════════════════════ -->
-<!-- SECTION C — PET WELLNESS                   -->
-<!-- ══════════════════════════════════════════ -->
-<section class="section" id="pet-wellness">
-  <div class="section-header">
-    <div class="section-eyebrow">🐾 For Your Furry Family</div>
-    <h2 class="section-title">Animal Wellness</h2>
-    <p class="section-desc">Natural care for the companions who fill our homes with joy. Because they deserve to feel their best too.</p>
-  </div>
-  <div class="product-grid" style="grid-template-columns:1fr 1fr;max-width:420px;margin:0 auto;">
-
-    <!-- Pet Care Guide -->
-    <div class="card" data-product="pet_care">
-      <div class="card-icon">🐕</div>
-      <div class="card-subtitle">PDF Guide · 36 Pages</div>
-      <div class="card-title">Natural Pet Care Guide</div>
-      <div class="card-desc">Safe herbs and natural remedies for dogs and cats — what helps, what to avoid, and when to call the vet.</div>
-      <div class="card-price">$7.99</div>
-      <a class="buy-btn disabled" href="#" target="_blank" rel="noopener">Download Guide</a>
-      <div class="card-format">PDF · Instant Download</div>
-    </div>
-
-    <!-- Sound Healing for Pets -->
-    <div class="card">
-      <div class="card-icon">🎶</div>
-      <div class="card-subtitle">Coming Soon</div>
-      <div class="card-title">Calm Pets Frequencies</div>
-      <div class="card-desc">Specially tuned frequencies shown to reduce anxiety in dogs and cats. Perfect for thunderstorms and vet visits.</div>
-      <div class="card-price" style="color:var(--muted);font-size:13px;">Coming Soon</div>
-      <a class="buy-btn disabled" href="#" style="pointer-events:none">Notify Me</a>
-      <div class="card-format">MP3 · In Development</div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ── PawCheck Banner ── -->
-<div class="pawcheck-banner">
-  <div class="pawcheck-inner">
-    <div class="pawcheck-pets">🐶🐱</div>
-    <div class="pawcheck-text">
-      <div class="free-badge">✦ Free Tool</div>
-      <h3>Is Your Pet Under the Weather?</h3>
-      <p>Our free AI-powered pet health checker gives you instant guidance on symptoms, natural remedies, and whether a vet visit is needed — available 24/7.</p>
-      <a class="pawcheck-btn" href="https://pawchecks.abacusai.app" target="_blank" rel="noopener">
-        Check My Pet Free →
-      </a>
-      <div class="pawcheck-features">
-        <span class="pawcheck-feature">🐕 Dogs</span>
-        <span class="pawcheck-feature">🐈 Cats</span>
-        <span class="pawcheck-feature">⚡ Instant Results</span>
-        <span class="pawcheck-feature">🌿 Natural Remedies</span>
-        <span class="pawcheck-feature">🆓 Always Free</span>
+      <div class="card-body">
+        <p class="card-desc">
+          50 battle-tested prompts for ChatGPT, Claude &amp; Gemini — ready to copy and paste.
+          Organized by category so you always find what you need fast.
+        </p>
+        <div class="card-preview-label">What's inside</div>
+        <ul class="card-preview-list">
+          <li>10 Business prompts</li>
+          <li>10 Marketing prompts</li>
+          <li>10 Coding prompts</li>
+          <li>10 Writing prompts</li>
+          <li>10 Research prompts</li>
+          <li>Pro tips section</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <div class="price-block">
+          <div class="price-label">One-time</div>
+          <div class="price-amount">$2<span class="cents">.99</span></div>
+        </div>
+        <a href="https://buy.stripe.com/4gMdRae9EdKT5obfj467S0s" class="btn-download" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v13m0 0l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/>
+          </svg>
+          Download Now
+        </a>
       </div>
     </div>
+
+    <!-- Card 2: Tax Checklist -->
+    <div class="product-card">
+      <div class="card-header">
+        <div class="card-icon green">📋</div>
+        <div class="card-title-wrap">
+          <div class="card-category">Finance &amp; Tax</div>
+          <div class="card-title">Freelancer Tax Deduction Checklist 2026</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">
+          Every legal deduction available to freelancers and contractors —
+          with checkboxes, deduction rates, dollar amount fields, and expert tips.
+        </p>
+        <div class="card-preview-label">What's inside</div>
+        <ul class="card-preview-list">
+          <li>19 deduction categories</li>
+          <li>Deduction % for each</li>
+          <li>Dollar amount fields</li>
+          <li>SE tax calculation</li>
+          <li>7 filing tips</li>
+          <li>IRS disclaimer</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <div class="price-block">
+          <div class="price-label">One-time</div>
+          <div class="price-amount">$2<span class="cents">.99</span></div>
+        </div>
+        <a href="https://buy.stripe.com/00w4gAd5A6ir9Erb2O67S0t" class="btn-download" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v13m0 0l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/>
+          </svg>
+          Download Now
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3: Side Hustle -->
+    <div class="product-card">
+      <div class="card-header">
+        <div class="card-icon orange">💼</div>
+        <div class="card-title-wrap">
+          <div class="card-category">Side Income</div>
+          <div class="card-title">10 Side Hustles You Can Start This Weekend</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">
+          Real startup costs, realistic income ranges, time requirements per week,
+          and 5 concrete first steps for each of 10 proven income streams.
+        </p>
+        <div class="card-preview-label">What's inside</div>
+        <ul class="card-preview-list">
+          <li>Freelance Writing</li>
+          <li>Virtual Assistant</li>
+          <li>Dropshipping</li>
+          <li>AI Consulting</li>
+          <li>Affiliate Marketing</li>
+          <li>+ 5 more hustles</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <div class="price-block">
+          <div class="price-label">One-time</div>
+          <div class="price-amount">$2<span class="cents">.99</span></div>
+        </div>
+        <a href="https://buy.stripe.com/00w3cw8PkgX54k72wi67S0u" class="btn-download" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v13m0 0l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/>
+          </svg>
+          Download Now
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 4: Resume Playbook -->
+    <div class="product-card">
+      <div class="card-header">
+        <div class="card-icon purple">📄</div>
+        <div class="card-title-wrap">
+          <div class="card-category">Career &amp; Job Search</div>
+          <div class="card-title">Beat the ATS: Resume Optimization Playbook</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">
+          Understand how applicant tracking systems score resumes, then optimize yours
+          with keywords, formatting rules, power words, and before/after examples.
+        </p>
+        <div class="card-preview-label">What's inside</div>
+        <ul class="card-preview-list">
+          <li>How ATS works</li>
+          <li>Keyword strategy map</li>
+          <li>Formatting do's &amp; don'ts</li>
+          <li>Before/after examples</li>
+          <li>60 power words</li>
+          <li>10 common mistakes</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <div class="price-block">
+          <div class="price-label">One-time</div>
+          <div class="price-amount">$2<span class="cents">.99</span></div>
+        </div>
+        <a href="https://buy.stripe.com/6oUbJ26Hc22bdUHgn867S0v" class="btn-download" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v13m0 0l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/>
+          </svg>
+          Download Now
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 5: Sound Healing -->
+    <div class="product-card">
+      <div class="card-header">
+        <div class="card-icon teal">🎵</div>
+        <div class="card-title-wrap">
+          <div class="card-category">Wellness &amp; Mindfulness</div>
+          <div class="card-title">Complete Guide to Sound Healing Frequencies</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">
+          The science and practice of 7 Solfeggio frequencies — from 396Hz to 963Hz —
+          with session templates, breathing exercises, and a 7-day practice schedule.
+        </p>
+        <div class="card-preview-label">What's inside</div>
+        <ul class="card-preview-list">
+          <li>396Hz – Liberation</li>
+          <li>432Hz – Natural Harmony</li>
+          <li>528Hz – Transformation</li>
+          <li>639Hz – Connection</li>
+          <li>741Hz – Expression</li>
+          <li>852Hz &amp; 963Hz too</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <div class="price-block">
+          <div class="price-label">One-time</div>
+          <div class="price-amount">$2<span class="cents">.99</span></div>
+        </div>
+        <a href="https://buy.stripe.com/5kQ3cwd5AeOX6sf3Am67S0w" class="btn-download" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v13m0 0l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/>
+          </svg>
+          Download Now
+        </a>
+      </div>
+    </div>
+
+  </div><!-- /products-grid -->
+</section>
+
+<!-- BUNDLE -->
+<section class="bundle-section" id="bundle">
+  <div class="bundle-inner">
+    <div class="bundle-badge">Best Value</div>
+    <h2 class="bundle-title">Get All 5 Guides for <em>$9.99</em></h2>
+    <p class="bundle-desc">
+      The complete AnchorWithin library in one purchase.
+      Save $4.96 compared to buying individually.
+    </p>
+    <div class="bundle-includes">
+      <span class="item">50 AI Prompts Pack</span>
+      <span class="item">Tax Deduction Checklist</span>
+      <span class="item">Side Hustle Blueprint</span>
+      <span class="item">Resume Playbook</span>
+      <span class="item">Sound Healing Guide</span>
+    </div>
+    <div class="bundle-pricing">
+      <span class="bundle-price-old">$14.95</span>
+      <span class="bundle-price-new">$9.99</span>
+      <span class="bundle-savings">Save $4.96</span>
+    </div>
+    <a href="https://buy.stripe.com/5kQ00k3v0gX59Er5Iu67S0x" class="btn-bundle" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+      </svg>
+      Get the Bundle — $9.99
+    </a>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+    </svg>
+    Secured by Stripe
+  </div>
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </svg>
+    Instant PDF Delivery
+  </div>
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+    </svg>
+    One-time payment, no subscription
+  </div>
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+    </svg>
+    Questions? anchorwithin.com
   </div>
 </div>
 
-<div class="botanical-divider"><span>🌺</span></div>
-
-<!-- ══════════════════════════════════════════ -->
-<!-- SECTION D — YOUTUBE / FREE CONTENT         -->
-<!-- ══════════════════════════════════════════ -->
-<section class="youtube-section" id="free-content">
-  <div class="section-header" style="text-align:center;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid var(--sage-pale);">
-    <div class="section-eyebrow">▶ Free on YouTube</div>
-    <h2 class="section-title">Free Healing Sessions</h2>
-    <p class="section-desc">Hours of free sound healing, guided meditations, and wellness content — new sessions every week.</p>
-  </div>
-
-  <div id="yt-videos" class="yt-grid">
-    <div class="yt-loading" style="grid-column:1/-1">Loading latest videos...</div>
-  </div>
-
-  <div style="text-align:center;margin-top:8px;">
-    <a class="yt-subscribe" href="https://www.youtube.com/@AnchorWithin" target="_blank" rel="noopener">
-      ▶ Subscribe Free
-    </a>
-    <div style="font-size:11px;color:var(--muted);margin-top:8px;">
-      New healing sessions posted weekly
-    </div>
-  </div>
-</section>
-
-<div class="botanical-divider"><span>🍀</span></div>
-
-<!-- ══════════════════════════════════════════ -->
-<!-- SECTION E — CRYPTO SIGNALS                 -->
-<!-- ══════════════════════════════════════════ -->
-<section class="signals-section" id="signals">
-  <div class="signals-card">
-    <div class="signals-eyebrow">📈 Financial Alignment</div>
-    <div class="signals-title">Financial Frequency Signals</div>
-    <div class="signals-desc">
-      Align your portfolio with market momentum. Live BTC and altcoin signals — RSI crossings, momentum alerts, and scalp setups delivered directly to your Telegram.
-    </div>
-    <div class="signals-price">$9<span>/month</span></div>
-    <a class="signals-btn" href="https://t.me/AnchorWithinSignals" target="_blank" rel="noopener">
-      Join the Channel
-    </a>
-    <div style="font-size:11px;color:var(--lavender);margin-top:10px;">
-      📬 Includes TP/SL levels with every signal
-    </div>
-    <div class="signals-disclaimer">⚠️ Not financial advice. For educational purposes only.</div>
-  </div>
-</section>
-
-<!-- ── Footer ── -->
+<!-- FOOTER -->
 <footer>
-  <div class="footer-brand">⚓ AnchorWithin</div>
-  <div class="footer-tagline">"All frequencies. All healing. All natural."</div>
-  <div class="stripe-trust">
-    <span>🔒</span>
-    <span>Secure payments powered by Stripe</span>
+  <div class="footer-logo">Anchor<span>Within</span></div>
+  <div class="footer-tagline">Practical knowledge for builders, freelancers, and curious minds.</div>
+  <div class="footer-copy">&copy; 2026 AnchorWithin. All rights reserved.</div>
+  <div class="footer-stripe">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+    </svg>
+    Payments processed securely by Stripe
   </div>
-  <div class="footer-links">
-    <a href="#sound-healing">Sound Healing</a>
-    <a href="#herbal-wellness">Herbal Guides</a>
-    <a href="#pet-wellness">Pet Wellness</a>
-    <a href="https://pawchecks.abacusai.app" target="_blank" rel="noopener">PawCheck</a>
-    <a href="https://www.youtube.com/@AnchorWithin" target="_blank" rel="noopener">YouTube</a>
-    <a href="https://t.me/MyAnchorWithin_bot" target="_blank" rel="noopener">💬 Support</a>
-  </div>
-  <div class="footer-contact">anchorwithin.daily1@gmail.com · Kaysville, Utah</div>
-  <div class="footer-copy">© 2026 AnchorWithin LLC · All rights reserved</div>
 </footer>
 
-<div id="status-banner">Store loading payment links...</div>
-
 <script>
-// ── Load Stripe payment links ──────────────────────────────────────
-(async function loadLinks() {
-  try {
-    const res = await fetch('./stripe_links.json');
-    if (!res.ok) { showBanner('Store is being configured — check back soon.'); return; }
-    const data = await res.json();
-    const products = data.products || data;
-    let linksFound = 0;
-    document.querySelectorAll('[data-product]').forEach(card => {
-      const pid  = card.dataset.product;
-      const prod = products[pid];
-      if (!prod || !prod.payment_link) return;
-      const btn = card.querySelector('.buy-btn, .bundle-buy');
-      if (btn) {
-        btn.href = prod.payment_link;
-        btn.classList.remove('disabled');
-        linksFound++;
-      }
+  // ── PDF download URLs (hosted on GitHub Pages alongside this file) ──
+  const PDF_FILES = {
+    ai_prompt_pack:      'ai_prompt_pack_v1.pdf',
+    tax_checklist_2026:  'tax_checklist_2026.pdf',
+    side_hustle_blueprint: 'side_hustle_blueprint.pdf',
+    resume_playbook:     'resume_playbook.pdf',
+    sound_healing_guide: 'sound_healing_guide.pdf',
+  };
+
+  const PRODUCT_NAMES = {
+    ai_prompt_pack:      '50 AI Prompts Pack',
+    tax_checklist_2026:  'Tax Checklist 2026',
+    side_hustle_blueprint: 'Side Hustle Blueprint',
+    resume_playbook:     'Resume Playbook',
+    sound_healing_guide: 'Sound Healing Guide',
+  };
+
+  function showUnlockNotice(unlockedId) {
+    const notice   = document.getElementById('unlock-notice');
+    const linksDiv = document.getElementById('download-links-container');
+
+    let toShow = [];
+    if (unlockedId === 'all') {
+      toShow = Object.keys(PDF_FILES);
+    } else if (PDF_FILES[unlockedId]) {
+      toShow = [unlockedId];
+    } else {
+      return; // unknown param, do nothing
+    }
+
+    linksDiv.innerHTML = '';
+    toShow.forEach(id => {
+      const a = document.createElement('a');
+      a.href      = PDF_FILES[id];
+      a.download  = PDF_FILES[id];
+      a.className = 'dl-link';
+      a.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13m0 0l-4-4m4 4l4-4"/><line x1="3" y1="20" x2="21" y2="20"/></svg>${PRODUCT_NAMES[id]}`;
+      linksDiv.appendChild(a);
     });
-    if (linksFound === 0) showBanner('Store is being configured — check back soon.');
-  } catch(e) {
-    showBanner('Store is being configured — check back soon.');
-  }
-})();
 
-// ── YouTube latest videos ─────────────────────────────────────────
-(async function loadYouTube() {
-  // YouTube channel search — uses public Data API
-  const CHANNEL_HANDLE = 'AnchorWithin';
-  const apiKey = 'AIzaSyAyiBw6'; // Public key — limited to search only
-
-  // Fallback: show static placeholder cards if API unavailable
-  const staticVideos = [
-    { title: '432Hz Universal Healing Frequency', views: 'Free healing session', id: '' },
-    { title: '528Hz DNA Repair — 60 Minutes', views: 'Free healing session', id: '' },
-    { title: 'Deep Sleep Sound Therapy', views: 'Free healing session', id: '' },
-    { title: 'Stress Relief Frequencies', views: 'Free healing session', id: '' },
-    { title: 'Morning Meditation — 741Hz', views: 'Free healing session', id: '' },
-    { title: 'Full Body Healing — All Frequencies', views: 'Free healing session', id: '' },
-  ];
-
-  const container = document.getElementById('yt-videos');
-
-  async function fetchVideos() {
-    try {
-      // Try fetching from the bridge API first (no CORS issues)
-      const bridgeResp = await fetch('https://ackccreate.github.io/anchorwithin-store/yt_videos.json');
-      if (bridgeResp.ok) {
-        const vids = await bridgeResp.json();
-        renderVideos(vids);
-        return;
-      }
-    } catch(e) {}
-    // Fall back to static
-    renderVideos(staticVideos);
+    notice.classList.add('visible');
+    notice.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
-  function renderVideos(videos) {
-    container.innerHTML = videos.slice(0,6).map(v => {
-      const thumb = v.thumbnail
-        ? `<img src="${v.thumbnail}" alt="${escHtml(v.title)}" loading="lazy">`
-        : `<div class="yt-thumb" style="display:flex;align-items:center;justify-content:center;background:var(--sage-pale);height:100%;font-size:28px;">🎵</div>`;
-      const href = v.id ? `https://www.youtube.com/watch?v=${v.id}` : 'https://www.youtube.com/@AnchorWithin';
-      return `<a class="yt-card" href="${href}" target="_blank" rel="noopener">
-        <div class="yt-thumb">${thumb}</div>
-        <div class="yt-card-body">
-          <div class="yt-card-title">${escHtml(v.title)}</div>
-          <div class="yt-card-views">${v.views || 'Free healing session'}</div>
-        </div>
-      </a>`;
-    }).join('');
-  }
-
-  function escHtml(s) {
-    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-  }
-
-  fetchVideos();
-})();
-
-// ── Nav active state ──────────────────────────────────────────────
-const navPills = document.querySelectorAll('.nav-pill');
-const sections = document.querySelectorAll('section[id], .youtube-section[id]');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 80) current = s.id;
-  });
-  navPills.forEach(p => {
-    p.classList.toggle('active', p.getAttribute('href') === '#' + current);
-  });
-}, {passive:true});
-
-function showBanner(msg) {
-  const b = document.getElementById('status-banner');
-  if (b) { b.textContent = msg; b.style.display = 'block'; }
-}
-
-// ── Purchase success ──────────────────────────────────────────────
-if (new URLSearchParams(location.search).get('purchased') === '1') {
-  const banner = document.getElementById('status-banner');
-  if (banner) {
-    banner.textContent = '✅ Thank you for your purchase! Check your email for your download link.';
-    banner.style.background = 'rgba(122,158,126,0.2)';
-    banner.style.display = 'block';
-  }
-}
+  // Check URL params on load
+  (function checkUnlock() {
+    const params    = new URLSearchParams(window.location.search);
+    const unlocked  = params.get('unlocked');
+    if (unlocked) showUnlockNotice(unlocked);
+  })();
 </script>
+
 </body>
 </html>
