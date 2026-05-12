@@ -1,0 +1,106 @@
+{
+  "ai_prompt_pack": {
+    "name": "50 AI Prompts That Save Hours",
+    "price": "$2.99",
+    "stripe_product_id": "prod_UEZBVOu2xkJB8A",
+    "stripe_price_id": "price_1TG63EJYvIJ0ph48qy9u1Chb",
+    "payment_link_id": "plink_1TG63FJYvIJ0ph483dEgwh1x",
+    "payment_link_url": "https://buy.stripe.com/4gMdRae9EdKT5obfj467S0s",
+    "success_redirect": "https://ackccreate.github.io/anchorwithin-store/?unlocked=ai_prompt_pack",
+    "download_url": "https://ackccreate.github.io/anchorwithin-store/ai_prompt_pack_v1.pdf",
+    "file": "ai_prompt_pack_v1.pdf"
+  },
+  "tax_checklist_2026": {
+    "name": "Freelancer Tax Deduction Checklist 2026",
+    "price": "$2.99",
+    "stripe_product_id": "prod_UEZB7rzEEHP1Wf",
+    "stripe_price_id": "price_1TG63FJYvIJ0ph48AVj2Vlq1",
+    "payment_link_id": "plink_1TG63FJYvIJ0ph48XsCt81HO",
+    "payment_link_url": "https://buy.stripe.com/00w4gAd5A6ir9Erb2O67S0t",
+    "success_redirect": "https://ackccreate.github.io/anchorwithin-store/?unlocked=tax_checklist_2026",
+    "download_url": "https://ackccreate.github.io/anchorwithin-store/tax_checklist_2026.pdf",
+    "file": "tax_checklist_2026.pdf"
+  },
+  "side_hustle_blueprint": {
+    "name": "10 Side Hustles You Can Start This Weekend",
+    "price": "$2.99",
+    "stripe_product_id": "prod_UEZBzAioZwAeva",
+    "stripe_price_id": "price_1TG63GJYvIJ0ph48MMf3LhQL",
+    "payment_link_id": "plink_1TG63GJYvIJ0ph48UBbdRNcg",
+    "payment_link_url": "https://buy.stripe.com/00w3cw8PkgX54k72wi67S0u",
+    "success_redirect": "https://ackccreate.github.io/anchorwithin-store/?unlocked=side_hustle_blueprint",
+    "download_url": "https://ackccreate.github.io/anchorwithin-store/side_hustle_blueprint.pdf",
+    "file": "side_hustle_blueprint.pdf"
+  },
+  "resume_playbook": {
+    "name": "Beat the ATS: Resume Optimization Playbook",
+    "price": "$2.99",
+    "stripe_product_id": "prod_UEZB7DUGWS5tLH",
+    "stripe_price_id": "price_1TG63HJYvIJ0ph48IgfVq4RP",
+    "payment_link_id": "plink_1TG63HJYvIJ0ph48LCdtoj0Q",
+    "payment_link_url": "https://buy.stripe.com/6oUbJ26Hc22bdUHgn867S0v",
+    "success_redirect": "https://ackccreate.github.io/anchorwithin-store/?unlocked=resume_playbook",
+    "download_url": "https://ackccreate.github.io/anchorwithin-store/resume_playbook.pdf",
+    "file": "resume_playbook.pdf"
+  },
+  "sound_healing_guide": {
+    "name": "Complete Guide to Sound Healing Frequencies",
+    "price": "$2.99",
+    "stripe_product_id": "prod_UEZBr5IAHaoMtU",
+    "stripe_price_id": "price_1TG63HJYvIJ0ph48qPazKrwF",
+    "payment_link_id": "plink_1TG63IJYvIJ0ph48CxZovPif",
+    "payment_link_url": "https://buy.stripe.com/5kQ3cwd5AeOX6sf3Am67S0w",
+    "success_redirect": "https://ackccreate.github.io/anchorwithin-store/?unlocked=sound_healing_guide",
+    "download_url": "https://ackccreate.github.io/anchorwithin-store/sound_healing_guide.pdf",
+    "file": "sound_healing_guide.pdf"
+  },
+  "nervous_system_reset_pack": {
+    "name": "Nervous System Reset Pack — 5 Healing Frequencies",
+    "price": "$9.00",
+    "stripe_product_id": "prod_UPsSuXVxqDirHf",
+    "stripe_price_id": "price_1TR2hxJYvIJ0ph48hYLmnDqB",
+    "payment_link_id": "plink_1TR2hxJYvIJ0ph481akWbmVR",
+    "payment_link_url": "https://buy.stripe.com/dRm4gA2qW8qz17VdaW67S1c",
+    "success_redirect": "https://ackccreate.github.io/anchorwithin-store/?unlocked=nsr_pack",
+    "download_url": "https://ackccreate.github.io/anchorwithin-store/?unlocked=nsr_pack",
+    "file": "products/nervous_system_reset_pack/",
+    "includes": [
+      "432Hz Nervous System Reset",
+      "528Hz Cortisol Reset",
+      "741Hz Toxin Release",
+      "852Hz Vagal Tone Activation",
+      "963Hz Deep Regulation"
+    ]
+  },
+  "bundle": {
+    "name": "AnchorWithin Complete Digital Bundle — All 5 Guides",
+    "price": "$9.99",
+    "stripe_product_id": "prod_UEZBA55fbQYqvr",
+    "stripe_price_id": "price_1TG63IJYvIJ0ph48UJo9eVMb",
+    "payment_link_id": "plink_1TG63JJYvIJ0ph48piKEcNzj",
+    "payment_link_url": "https://buy.stripe.com/5kQ00k3v0gX59Er5Iu67S0x",
+    "success_redirect": "https://ackccreate.github.io/anchorwithin-store/?unlocked=all",
+    "download_url": "https://ackccreate.github.io/anchorwithin-store/?unlocked=all",
+    "includes": [
+      "ai_prompt_pack",
+      "tax_checklist_2026",
+      "side_hustle_blueprint",
+      "resume_playbook",
+      "sound_healing_guide"
+    ]
+  },
+  "full_sound_healing_bundle": {
+    "name": "Full Sound Healing Bundle",
+    "price": "$19.00",
+    "stripe_product_id": "prod_UTF9LjTh33DHnj",
+    "stripe_price_id": "price_1TUIf3JYvIJ0ph48clhCuVwo",
+    "payment_link_id": "plink_1TUIf4JYvIJ0ph48pnBMIDdX",
+    "payment_link_url": "https://buy.stripe.com/00wbJ25D87mv4k72wi67S1k",
+    "success_redirect": "https://ackccreate.github.io/anchorwithin-store/?unlocked=full_bundle",
+    "download_url": "https://ackccreate.github.io/anchorwithin-store/?unlocked=full_bundle",
+    "includes": [
+      "All 5 MP3s",
+      "Sound Healing Guide PDF"
+    ]
+  }
+}
